@@ -1,0 +1,353 @@
+.top {
+  height: 60px;
+  padding: 10px;
+  padding-left: 20px;
+  font-size: 32px;
+  font-weight: bold;
+  background-color: white;
+}
+
+.top p {
+  margin: 2px;
+  padding: 2px;
+  font-size: 16px;
+  font-weight: normal;
+  color: gray;
+}
+
+.main {
+  display: flex;
+
+  margin: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+
+
+  height: 530px;
+  padding: 10px;
+
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.group-table,
+.member-table {
+  border-collapse: collapse;
+  width: 90%;
+  font-size: 12px;
+  margin-top: 10px;
+  border: none;
+}
+
+.group-table th,
+.group-table td,
+.member-table th,
+.member-table td {
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  border-left: none;
+  border-right: none;
+  padding: 8px;
+  text-align: left;
+}
+
+.group-table th,
+.member-table th {
+  background-color: rgba(172, 244, 171, 0.6);
+}
+
+
+.group-table td a {
+  text-decoration: none;
+  color: black;
+}
+
+.group-table td a:hover {
+  color: #4CAF50;
+  font-weight: bold;
+}
+
+.group-table td a.selected {
+  color: #4CAF50;
+  font-weight: bold;
+}
+
+
+h1 {
+  font-size: 30px;
+}
+
+input[type="text"][name="groupName"], 
+input[type="text"][name="newGroupName"],
+input[type="text"][name="leader"],
+input[type="text"][name="project-name"] {
+  border: 1px solid #dddddd;
+  margin: 10px 0 20px 0;
+  padding: 10px;
+  width: 300px;
+  box-sizing: border-box;
+}
+
+input[type="text"][name="member"],
+input[type="email"][name="email"],
+input[type="text"][name="role"] {
+  border: 1px solid #dddddd;
+  margin: 10px 0 10px 0;
+  padding: 10px;
+  width: 300px;
+  box-sizing: border-box;
+}
+
+
+.close-button {
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 2px 3px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-left: 200px;
+  border: 3px solid red;
+  background-color: red;
+  color: white;
+  font-size: 14px;
+}
+
+.close-button:hover {
+  background-color: red;
+  color: white;
+
+}
+
+button[type="submit"] {
+  border: 3px solid #4CAF50;
+  background-color: #4CAF50;
+  color: white;
+}
+
+.button-pop {
+  display: inline-block;
+}
+
+body {
+  background: offwhite;
+  font-family: Arial, sans-serif;
+
+}
+
+button {
+  border-radius: 5px;
+  padding: 2px 3px;
+  cursor: pointer;
+  margin-top: 10px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 3px dotted #4CAF50;
+  color: black;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.GroupManagementButton {
+  display: inline-block;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  padding: 10px;
+  width: 400px;
+  left: 50%;
+  margin-left: -180px;
+  height: 500px;
+  top: 50%;
+  margin-top: -300px;
+  background: #FFF;
+  border: 4px solid lightgreen;
+  z-index: 20;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#popup:after {
+  position: fixed;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -2;
+}
+
+#popup:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #FFF;
+  border-radius: 30px;
+  cursor: pointer;
+  z-index: -1;
+}
+
+.popupk {
+  display: none;
+  position: fixed;
+  padding: 10px;
+  width: 400px;
+  left: 50%;
+  margin-left: -180px;
+  height: 500px;
+  top: 50%;
+  margin-top: -300px;
+  background: #FFF;
+  border: 4px solid lightgreen;
+  z-index: 20;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#popupk:after {
+  position: fixed;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -2;
+}
+
+#popupk:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #FFF;
+  border-radius: 30px;
+  cursor: pointer;
+  z-index: -1;
+}
+
+.popupp {
+  display: none;
+  position: fixed;
+  padding: 10px;
+  width: 400px;
+  left: 50%;
+  margin-left: -180px;
+  height: 500px;
+  top: 50%;
+  margin-top: -300px;
+  background: #FFF;
+  border: 4px solid lightgreen;
+  z-index: 20;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#popupp:after {
+  position: fixed;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -2;
+}
+
+#popupp:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #FFF;
+  border-radius: 30px;
+  cursor: pointer;
+  z-index: -1;
+}
+
+#menu {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+
+#menu li {
+  margin-right: 45px;
+  float: left;
+}
+
+#menu li a {
+  text-decoration: none;
+  color: black;
+}
+
+#menu li a:hover {
+  color: #4CAF50;
+}
+
+#menu li a.selected {
+  color: #4CAF50;
+  font-weight: bold;
+}
+
+
+.groupcreate{
+  font-size: 16px;
+}
+
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    text-align: center;
+}
+
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

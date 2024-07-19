@@ -1,0 +1,819 @@
+WEEK01----------------------------------------------------------------------------------------------
+Question 1
+Write code that reads in an integer and that outputs the addition of number and -75.
+
+For example:
+
+Input	Result
+73
+Enter an integer:
+73 + -75 = -2
+
+----------------------------------------------------------------------------------------------------
+Question 2
+Write code that reads in an integer and that outputs the difference between number and 40.
+
+For example:
+
+Input	Result
+33
+Enter an integer:
+33 - 40 = -7
+
+----------------------------------------------------------------------------------------------------
+Question 3
+Write code that prints the phrase "Java is Good" on three lines, one word per line, with each word justified to the left
+
+For example:
+
+Result
+Java
+is
+Good
+
+----------------------------------------------------------------------------------------------------
+Question 4
+Write code that reads in an integer and that outputs number multiplied by 7.
+
+For example:
+
+Input	Result
+-99
+Enter an integer:
+-99 * 7 = -693
+
+-----------------------------------------------------------------------------------------------WEEK01
+
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+WEEK02----------------------------------------------------------------------------------------------
+Question 1
+Write code which checks validity of a 5-digit positive integer entered by the user.
+The number is considered valid (true) if the first digit is greater than or equal to the last digit.
+Otherwise it is invalid (false).
+
+For example:
+
+Input	Result
+82883
+Enter a 5-digit integer
+The number is true
+
+----------------------------------------------------------------------------------------------------
+Question 2
+Write code that prints the phrase "Work is Workship" on two lines, two words on the first line
+
+For example:
+
+Result
+Work is
+Workship
+
+----------------------------------------------------------------------------------------------------
+Question 3
+Write code that reads in a 4-digit number and that outputs the sum of the digits.
+
+For example:
+
+Input	Result
+5552
+Enter a 4-digit integer
+The sum of all of the digits is 17
+
+----------------------------------------------------------------------------------------------------
+Question 4
+Write code which checks validity of a 3-digit positive integer entered by the user.
+The number is considered valid (true) if the sum of the first two digits is less than the last.
+Otherwise it is invalid (false).
+
+For example:
+
+Input	Result
+425
+Enter a 3-digit integer
+The number is false
+
+-----------------------------------------------------------------------------------------------WEEK02
+
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+WEEK03----------------------------------------------------------------------------------------------
+Question 1
+Write code that reads in two integers and
+if the first is less than the second
+that outputs the first + 100
+else outputs the second - 100
+
+For example:
+
+Input	Result
+39
+64
+Enter two integers:
+39 + 100 = 139
+
+----------------------------------------------------------------------------------------------------
+Question 2
+Write code which checks validity of a 5-digit positive integer entered by the user.
+The number is considered valid (true) if the fourth digit from the left is less than or equal to 5.
+Otherwise it is invalid (false).
+
+For example:
+
+Input	Result
+58721
+Enter a 5-digit integer
+The number is true
+
+----------------------------------------------------------------------------------------------------
+Question 3
+Write code that reads in two integers and
+if the first is greater than the second
+that outputs the first - 41
+else outputs the second + 41
+
+For example:
+
+Input	Result
+90
+10
+Enter two integers:
+90 - 41 = 49
+
+----------------------------------------------------------------------------------------------------
+Question 4
+Write code that reads in a 5-digit number and that outputs the product of the digits.
+
+For example:
+
+Input	Result
+32681
+Enter a 5-digit integer
+The product of all of the digits is 288
+
+-----------------------------------------------------------------------------------------------WEEK03
+
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+WEEK04----------------------------------------------------------------------------------------------
+Question 1
+Consider the following test code placed in the test class within the main() method.
+Your task is to write a Java class Box so that the expected output is produced.
+
+
+For example:
+
+Test	Result
+int width = 21;
+int height = 25;
+int depth = 59;
+String builder = "Arthur ";
+Box a = new Box(width, height, depth);
+System.out.println(a.printMe());
+Box b = new Box(width, height, depth, builder);
+System.out.println(b.printMe());
+Box built.
+  Width: 21
+  Height: 25
+  Depth: 59
+  Built by null
+Box built.
+  Width: 21
+  Height: 25
+  Depth: 59
+  Built by Arthur
+
+----------------------------------------------------------------------------------------------------
+Question 2
+Write code so that the user is prompted for 3 assignment scores.
+The program then calculates the average score for the 3 assignments.
+It should display the output to a maximum of 2 decimal places.
+Hint: you will need to use a DecimalFormat or NumberFormat for the decimal places
+
+For example:
+
+Input	Result
+88 84 59
+Assign 1 score:
+Assign 2 score:
+Assign 3 score:
+Your average score is 77
+
+----------------------------------------------------------------------------------------------------
+Question 3
+Ann watched a TV program about health and learned that it is recommended to sleep at least A
+hours per day, but oversleeping is also not healthy and you should not sleep more than B hours.
+
+Now Ann sleeps H hours per day.
+Determine if her sleep schedule complies with the requirements of that TV program.
+If it does, print Normal. If Ann sleeps fewer than A hours, output Deficiency. If she sleeps more than B hours, output Excess.
+
+Write code that reads in three numbers with variables in the following order: A, B, H.
+A is always less than or equal to B.
+
+For example:
+
+Input	Result
+11
+6
+15
+Excess
+
+----------------------------------------------------------------------------------------------------
+Question 4
+Write code which checks validity of a 3-digit positive integer entered by the user.
+The number is considered valid (true) if the sum of the first two digits is less than the last.
+Otherwise it is invalid (false).
+
+For example:
+
+Input	Result
+425
+Enter a 3-digit integer
+The number is false
+
+-----------------------------------------------------------------------------------------------WEEK04
+
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+WEEK05----------------------------------------------------------------------------------------------
+Question 1
+Write a program that accepts, as input, a sequence of non-negative integers, each written
+on a separate line. When the program encounters 0, it should stop and output the total
+length of the sequence so far (not including the final 0).
+
+Do not read any numbers following 0.
+
+For example:
+
+Input	Result
+4 6 6 2 1 8 2 6 0 7 5 2 2 7 9 2
+8
+
+----------------------------------------------------------------------------------------------------
+Question 2
+You and your date are trying to get a table at a restaurant.
+The parameter "you" is the stylishness of your clothes, in the range 0..20,
+and "date" is the stylishness of your date's clothes.
+The result getting the table is encoded as an int value with
+0 = no, 1 = maybe, 2 = yes.
+If either of you is very stylish, 12 or more, then the result is 2 (yes).
+With the exception that if either of you has style of 3 or less, then the result is 0 (no).
+Otherwise the result is 1 (maybe).
+
+dateFashion(6, 13)  \small \rightarrow 2
+dateFashion(6, 3)  \small \rightarrow 0
+dateFashion(6, 11)  \small \rightarrow 1
+
+For example:
+
+Test	Result
+System.out.println(dateFashion(8, 6));
+1
+
+----------------------------------------------------------------------------------------------------
+Question 3
+The number 7 is a truly great number. Given two int values, a and b, return true if either one is 7.
+Or if their sum or difference is 7.
+Note: the function Math.abs(num) computes the absolute value of a number.
+
+loveSeven(7, 5)  \small \rightarrow true
+loveSeven(9, 5)  \small  \rightarrow false
+loveSeven(6, 1)  \small  \rightarrow true
+
+For example:
+
+Test	Result
+System.out.println(loveSeven(15, 2));
+false
+
+----------------------------------------------------------------------------------------------------
+Question 4
+Consider the following test code placed in the test class within the main() method.
+Your task is to write a Java class Book so that the expected output is produced.
+
+
+For example:
+
+Test
+int year = 1964;
+String title = "Master, Winter and Hero";
+Book b1 = new Book(title, year);
+System.out.println(b1);
+b1.setRead(true);
+System.out.println(b1);
+title = "The Light of Spirind";
+Book b2 = new Book(title);
+System.out.println(b2);
+b2.setRead(true);
+System.out.println("The book has now been read: " + b2.isRead());
+
+Result
+This Book
+title: Master, Winter and Hero,
+ year of publication: 1964,
+ read: false
+This Book
+title: Master, Winter and Hero,
+ year of publication: 1964,
+ read: true
+This Book
+title: The Light of Spirind,
+ year of publication: 1960,
+ read: false
+The book has now been read: true
+
+-----------------------------------------------------------------------------------------------WEEK05
+
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+WEEK06----------------------------------------------------------------------------------------------
+Question 1
+You are driving a little too fast, and a police officer stops you.
+Write code to compute the result, encoded as an int value:
+0 = no fine, 1 = small fine, 2 = big fine.
+If speed is 36 or less, the result is 0.
+If speed is between 37 and 70 inclusive, the result is 1.
+If speed is 71 or more, the result is 2. Unless it is your birthday
+-- on that day, your speed can be 5 higher in all cases.
+
+caughtSpeeding(35, false)  \small \rightarrow 0
+caughtSpeeding(41, false)  \small \rightarrow 1
+caughtSpeeding(41, true)  \small \rightarrow 0
+
+For example:
+
+Test	Result
+System.out.println(caughtSpeeding(58, false));
+1
+
+----------------------------------------------------------------------------------------------------
+Question 2
+Write a declaration that populates an array with the following numbers
+46, 2, 51, 76, 21, 4, 71, 67, 91
+then prints them out in the following format:
+[an, ..., a2, a1, a0]
+and finally prints the sum on a new line
+
+For example:
+
+Result
+[91, 67, 71, 4, 21, 76, 51, 2, 46]
+429
+
+----------------------------------------------------------------------------------------------------
+Question 3
+We'll say a number is special if it is a multiple of 11 or if it is one more than a multiple of 11.
+Return true if the given non-negative number is special.
+
+specialEleven(22)  \small \rightarrow true
+specialEleven(23)  \small \rightarrow true
+specialEleven(24)  \small \rightarrow false
+
+For example:
+
+Test	Result
+System.out.println(specialEleven(72));
+false
+
+----------------------------------------------------------------------------------------------------
+Question 4
+Given a natural number n, generate a sequence of integers described in the Collatz conjecture:
+
+If n is even, divide it in half. If it is odd, multiply it by 3 and add 1. Repeat this operation until reaching 1.
+
+For example, if n = 17, the sequence looks as follows:
+
+17 52 26 13 40 20 10 5 16 8 4 2 1
+
+The conjecture states that such a sequence will eventually reach 1 for any value of n.
+
+Output format:
+Sequence of integers in a single line, separated by single spaces.
+
+For example:
+
+Input	Result
+6
+6 3 10 5 16 8 4 2 1
+
+-----------------------------------------------------------------------------------------------WEEK06
+
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+WEEK07----------------------------------------------------------------------------------------------
+Question 1
+Write a method which will find the smallest integer in an array passed as a parameter.
+Also output the count of the minimum value.
+For example:
+int[] array = {30, 9, 20, 9};
+findMin(array) \rightarrow
+The minimum is: 9
+The count is: 2
+
+For example:
+
+Test	Result
+int[] array = {17, -6};
+findMin(array);
+The minimum is: -6
+The count is: 1
+
+----------------------------------------------------------------------------------------------------
+Question 2
+Given an array of ints, return the number of 4's in the array.
+
+arrayCountNumber([6, 3, 4])  \small \rightarrow 1
+arrayCountNumber([6, 4, 4])  \small \rightarrow 2
+arrayCountNumber([7, 4, 4, 6, 4])  \small  \rightarrow 3
+
+For example:
+
+Test	Result
+int[] array = {4};
+System.out.println(arrayCountNumber(array));
+1
+
+----------------------------------------------------------------------------------------------------
+Question 3
+Write code that reads in 6 numbers and that outputs the product of
+all numbers greater than or equal to zero and the product of all numbers less than zero.
+
+For example:
+
+Input	Result
+1 -6 -5 7 6 -3
+Enter 6 integers
+Product of non-negatives = 42
+Product of negatives = -90
+
+----------------------------------------------------------------------------------------------------
+Question 4
+Given an array of ints, return true if the number of 4's is
+greater than the number of 8's.
+
+moreFourEight([4, 8, 4])  \small \rightarrow true
+moreFourEight([4, 8, 4, 8])  \small \rightarrow false
+moreFourEight([4, 4])  \small \rightarrow true
+
+For example:
+
+Test	Result
+int[] nums = {8, 4, 4, 4, 4};
+System.out.println(moreFourEight(nums));
+true
+
+-----------------------------------------------------------------------------------------------WEEK07
+
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+WEEK07----------------------------------------------------------------------------------------------
+Question 1
+Write a method which will find the smallest integer in an array passed as a parameter.
+Also output the count of the minimum value.
+For example:
+int[] array = {30, 9, 20, 9};
+findMin(array) \rightarrow
+The minimum is: 9
+The count is: 2
+
+For example:
+
+Test	Result
+int[] array = {17, -6};
+findMin(array);
+The minimum is: -6
+The count is: 1
+
+----------------------------------------------------------------------------------------------------
+Question 2
+Given an array of ints, return the number of 4's in the array.
+
+arrayCountNumber([6, 3, 4])  \small \rightarrow 1
+arrayCountNumber([6, 4, 4])  \small \rightarrow 2
+arrayCountNumber([7, 4, 4, 6, 4])  \small  \rightarrow 3
+
+For example:
+
+Test	Result
+int[] array = {4};
+System.out.println(arrayCountNumber(array));
+1
+
+----------------------------------------------------------------------------------------------------
+Question 3
+Write code that reads in 6 numbers and that outputs the product of
+all numbers greater than or equal to zero and the product of all numbers less than zero.
+
+For example:
+
+Input	Result
+1 -6 -5 7 6 -3
+Enter 6 integers
+Product of non-negatives = 42
+Product of negatives = -90
+
+----------------------------------------------------------------------------------------------------
+Question 4
+Given an array of ints, return true if the number of 4's is
+greater than the number of 8's.
+
+moreFourEight([4, 8, 4])  \small \rightarrow true
+moreFourEight([4, 8, 4, 8])  \small \rightarrow false
+moreFourEight([4, 4])  \small \rightarrow true
+
+For example:
+
+Test	Result
+int[] nums = {8, 4, 4, 4, 4};
+System.out.println(moreFourEight(nums));
+true
+
+-----------------------------------------------------------------------------------------------WEEK07
+
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+WEEK08----------------------------------------------------------------------------------------------
+Question 1
+Write a method that takes 3 parameters: 2 double, (num1 and num2) and 1 char (type),
+in that order, and returns a double value (rounded to two decimal places - use Math.round())
+dependent on the following rules.
+char (type) can only be one of +, –, *, /, or %.
+If type is:
+'+' then add num1 and num2.
+'–' if num1 is greater than num2 then subtract num2 from num1, otherwise subtract num1 from num2.
+'*' then multiply num1 and num2.
+'/' if num2 equals zero then return 0, otherwise divide num1 by num2.
+'%' then return the modulo division of num1 and num2.
+any other character then return -1.0
+
+doCalculation(3.5, 4.2, '+')  \small \rightarrow The value of the calculation is: 7.7
+doCalculation(3.5, 4.2, '-')  \small \rightarrow The value of the calculation is: 0.7
+doCalculation(3.5, 4.2, '*')  \small \rightarrow The value of the calculation is: 14.7
+doCalculation(3.5, 4.2, '/')  \small \rightarrow The value of the calculation is: 0.83
+doCalculation(3.5, 4.2, '%')  \small \rightarrow The value of the calculation is: 3.5
+doCalculation(3.5, 4.2, 'P')  \small \rightarrow The value of the calculation is: -1.0
+
+For example:
+
+Test
+double num1 = 37.62, num2 = 56.68;
+char c = '+';
+System.out.println("The value of the calculation is: " + doCalculation(num1, num2, c));
+
+Result
+The value of the calculation is: 94.3
+
+----------------------------------------------------------------------------------------------------
+Question 2
+Given a string return the first character in the string if it contains
+more than 4 characters, and the last character otherwise.
+
+firstOrLastChar("kwk") \small \rightarrow 'k'
+firstOrLastChar("gals") \small \rightarrow 's'
+firstOrLastChar("uocrws") \small \rightarrow 'u'
+
+For example:
+
+Test	Result
+System.out.println(firstOrLastChar("xt"));
+t
+
+----------------------------------------------------------------------------------------------------
+Question 3
+Given two strings, word and a separator sep, return a big
+string made of count occurrences of the word, separated
+by the separator string.
+
+repeatSeparator("Word", "X", 3) \small \rightarrow "WordXWordXWord"
+repeatSeparator("This", "And", 2) \small \rightarrow "ThisAndThis"
+repeatSeparator("This", "And", 1) \small \rightarrow "This"
+
+For example:
+
+Test	Result
+System.out.println(repeatSeparator("E", "Sek", 3));
+ESekESekE
+
+----------------------------------------------------------------------------------------------------
+Question 4
+Consider the series of numbers beginning at start and running up to but not including end,
+so for example start = 1 and end = 5 gives the series 1, 2, 3, 4.
+Return a new String[] array containing the string form of these numbers,
+except for multiples of 3, use "Fizz" instead of the number,
+for multiples of 5 use "Buzz", and for multiples of both 3 and 5
+use "FizzBuzz".
+In Java, String.valueOf(xxx) will make the String form of an int or other type.
+
+fizzBuzz(1, 6)  \small \rightarrow "1", "2", "Fizz", "4", "Buzz"
+fizzBuzz(1, 8)  \small \rightarrow "1", "2", "Fizz", "4", "Buzz", "Fizz", "7"
+fizzBuzz(1, 11)  \small  \rightarrow "1", "2", "Fizz", "4", "Buzz", "Fizz", "7", "8", "Fizz", "Buzz"
+
+For example:
+
+Test
+String[] array = fizzBuzz(1, 7);
+int i;
+for(i = 0; i < array.length - 1; i++)
+System.out.print(array[i] + ", ");
+System.out.println(array[i]);
+
+Result
+1, 2, Fizz, 4, Buzz, Fizz
+
+-----------------------------------------------------------------------------------------------WEEK08
+
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+WEEK09----------------------------------------------------------------------------------------------
+Question 1
+Write a method named draw_patch(int width, int height, char primary, char secondary)
+which will print the primary character on even columns and the secondary character on odd columns.
+
+For example:
+
+Test	Result
+drawPatch(9, 9, ',', '-');
+, - , - , - , - ,
+, - , - , - , - ,
+, - , - , - , - ,
+, - , - , - , - ,
+, - , - , - , - ,
+, - , - , - , - ,
+, - , - , - , - ,
+, - , - , - , - ,
+, - , - , - , - ,
+
+----------------------------------------------------------------------------------------------------
+Question 2
+Return the "centred" average of an array of ints, which
+we'll say is the mean average of the values, except we ignore
+the largest and smallest values in the array.
+If there are multiple copies of the smallest value,
+ignore just one copy, and likewise for the largest value.
+Use int division to produce the final average.
+You may assume that the array is length 3 or more.
+centredAverage([1, 2, 3, 4, 100])  \small \rightarrow 3
+centredAverage([1, 1, 5, 5, 10, 8, 7])  \small  \rightarrow 5
+centredAverage([-10, -4, -2, -4, -2, 0])  \small \rightarrow -3
+
+For example:
+
+Test	Result
+int[] nums = {-11, 12, -16, 1, -17, -10, -10, -8, -16, 2, -20};
+System.out.println(centredAverage(nums));
+-9
+
+----------------------------------------------------------------------------------------------------
+Question 3
+Consider the following test code placed in the test class within the main() method.
+Your task is to write a Java class Vehicle so that the expected output is produced.
+
+
+For example:
+
+Test	Result
+int wheels = 2;
+String make = "Ducatti";
+String color = "White";
+Vehicle v1 = new Vehicle(make);
+System.out.println(v1.aboutMe());
+Vehicle v2 = new Vehicle(make, color);
+System.out.println(v2.aboutMe());
+Vehicle v3 = new Vehicle(make, color, wheels);
+System.out.println(v3.aboutMe());
+Vehicle object created.
+  Make: Ducatti
+  Colour: Blue
+  Wheels: 4
+Vehicle object created.
+  Make: Ducatti
+  Colour: White
+  Wheels: 4
+Vehicle object created.
+  Make: Ducatti
+  Colour: White
+  Wheels: 2
+
+----------------------------------------------------------------------------------------------------
+Question 4
+Write a method that prints how many of each lower case vowel (a, e, i, o, u)
+appear in the entire string. Also print how many other characters are in the string.
+
+howManyVowels("quick fox is")  \small \rightarrow Number of each lowercase vowel in the string
+a: 0
+e: 0
+i: 2
+o: 1
+u: 1
+other characters: 8
+
+For example:
+
+Test	Result
+String sentence = "CsprdkoPurln dhVqq f gul col r jcwk ujd";
+System.out.println(howManyVowels(sentence));
+Number of each lowercase vowel in the string:
+a: 0
+e: 0
+i: 0
+o: 2
+u: 3
+other characters: 34
+
+-----------------------------------------------------------------------------------------------WEEK09
+
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+
+WEEK10----------------------------------------------------------------------------------------------
+Question 1
+We'll say that a number is "teen" if it is in the range 13..19 inclusive.
+Given 2 int values, return true if one or the other is teen, but not both.
+
+loneTeen(13, 99)  \small \rightarrow true
+loneTeen(21, 19)  \small \rightarrow true
+loneTeen(13, 13)  \small \rightarrow false
+
+For example:
+
+Test	Result
+System.out.println(loneTeen(48, 8));
+false
+
+----------------------------------------------------------------------------------------------------
+Question 2
+Given a sequence of natural numbers, find its maximum element that is divisible by 3.
+The input starts with the total number of elements in the sequence,
+and then lists the elements themselves.
+The total number of elements does not exceed 100. The numbers may not be in order.
+The program should print a single number that is the maximum element
+of the sequence divisible by 4, or -1 if there is no such number
+
+For example:
+
+Input
+74 37 76 22 24 55 88 66 74 43 54 54 98 41 13 68 46 46 24 34 15 87 56 57 48 66 19 69 45 56 35 69 18 100 75 6 63 77 30 28 7 52 64 37 49 57 75 87 100 13 29 37 62 13 21 50 72 17 92 1 96 52 12 21 70 99 51 5 51 17 34 89 5 3 85
+
+Result
+99
+
+----------------------------------------------------------------------------------------------------
+Question 3
+Write a program that reads an unsorted array of integers and two numbers n and m.
+The program must check if n and m occur next to each other in the array (in any order).
+
+Input data format:
+The first line contains the size of an array.
+The second line contains elements of the array.
+The third line contains two integer numbers n and m.
+All numbers in the same line are separated by the space character.
+Output data format:
+Only a single value: true or false.
+Sample Input:
+3
+1 3 2
+2 3
+Sample Output:
+true
+
+For example:
+
+Input	Result
+4
+4 8 2 3
+8 2
+true
+
+----------------------------------------------------------------------------------------------------
+Question 4
+A detector compares the size of parts produced by a machine with the reference standard.
+
+If the size of the part is larger, it can be sent to be fixed, and the detector prints the number 1.
+If the size of the part is smaller, it is removed as reject, and the detector prints the number -1.
+If the part was made perfect, it is sent to the box with ready products, and the detector prints 0.
+
+Write a program, which takes the number of parts n as input, and then the sequence of detector prints.
+The program should output numbers in a single line – the number of ready parts, the number of parts
+to be fixed, and the number of rejects.
+Sample Input:
+10 -1 0 1 0 0 1 1 -1 1 0
+Sample Output:
+4 4 2
+
+For example:
+
+Input	Result
+4 -1 1 0 -1
+1 1 2
+
+-----------------------------------------------------------------------------------------------WEEK10

@@ -1,0 +1,909 @@
+
+
+
+
+
+/* /////////////////////////////////////////// */
+.top {
+  height: 60px;
+  padding: 10px;
+  padding-left: 20px;
+  font-size: 32px;
+  font-weight: bold;
+  background-color: white;
+}
+
+.top p {
+  margin: 2px;
+  padding: 2px;
+  font-size: 16px;
+  font-weight: normal;
+  color: gray;
+}
+
+
+.main {
+  display: flex;
+  margin: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  height: 530px;
+  padding: 10px;
+  font-size: 32px;
+  font-weight: bold;
+
+}
+
+.attached-files {
+  margin-top: 10px;
+}
+
+.main-container{
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+#drop-area {
+
+  height: 100px;
+  border: 2px dashed #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  padding-left: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.drag-text {
+  font-size: 12px;
+  margin-top: -5px;
+}
+
+#fileList {
+  list-style-type: none;
+  padding: 0;
+  position: absolute; 
+  top: 0; 
+  left: 50px; 
+  
+}
+
+.file-buttons{
+ 
+  align-items: center;
+  padding: 20px;
+
+}
+
+.file-list li {
+  font-size: 14px; 
+  text-align: left;
+  display: inline-block; 
+  margin-right: 15px; 
+}
+
+.table-container {
+  max-height: 700px; 
+  overflow-y: auto;
+}
+
+
+.progress-container {
+  width: 1030px;
+  height: 50px;
+  border: 2px dashed #ccc;
+  border-radius: 8px;
+  margin-top: 10px;
+  position: relative;
+}
+
+#progress-bar {
+  width: 93%;
+  height: 10px; 
+  margin-top: -50px; 
+  margin-left: 6%;
+  position: relative; 
+  z-index: 1;
+  
+}
+
+#gallery {
+  grid-template-columns: repeat(auto-fill, 120px); 
+  grid-gap: 100px; 
+  margin-top: -12px; 
+  padding-left: 5px;
+  justify-content: center; 
+}
+
+#gallery img {
+  width: 4%; /* Ensures images fill their grid cells */
+  height: auto; /* Allows images to maintain aspect ratio */
+
+}
+
+.highlight {
+  background-color: #f2f2f2;
+}
+
+
+h2 {
+  font-size: 24px;
+  margin-top: 0; 
+  margin-bottom: 10px; 
+}
+
+.file-buttons button {
+  padding: 5px 20px;
+  color: #1b634d;
+  font-weight: bold;
+  border: 1px dashed #1b634d; 
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease; 
+}
+
+.file-buttons button:hover {
+  border-color: #1b634d; 
+  color: #ffffff;
+}
+
+.file-buttons button:hover {
+  background-color: #1b634d; 
+}
+
+/* file list container */
+.file-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+
+
+/* /////////////////////////////////////////// */
+
+.file-table {
+  width: 100%;
+  border-collapse: collapse;
+  
+}
+
+.file-table td {
+  padding: 20px;
+  text-align: left;
+  align-items: center;
+}
+
+.file-table th {
+  font-weight: bold;
+  text-align: left;
+}
+
+/* checkbox for file selection */
+.file-table .select-checkbox {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.file-preview p {
+  margin: 0; 
+}
+
+.file-preview {
+  display: flex; 
+  align-items: center; 
+  margin-top: 10px;
+}
+
+.file-preview img{
+  width: 30px;
+
+}
+
+.file-info {
+  flex: 1; 
+}
+
+.file-info p {
+  margin: 0;
+}
+
+.file-info p strong {
+  font-weight: bold;
+}
+
+.delete-button {
+  margin-right: 230px;
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  
+}
+
+/* table header cells */
+.file-table th {
+  border-bottom: 2px solid #1b634d;
+}
+
+/*  table rows (except the first one) */
+.file-table tbody tr:not(:first-child) {
+  border-top: 1px solid #ccc; 
+}
+
+.file-table thead {
+  position: sticky;
+  top: 0; 
+  background-color: #ffffff;
+}
+
+th img {
+  width: 32px; 
+  height: 32px; 
+}
+
+/* /////////////////////////////////////////// */
+
+
+.button,
+.button-delete-button, 
+.button-edit-button,
+.button-share-button {
+  display: flex;
+  align-items :baseline;
+  background-color: white;
+  color: black;
+  border: 2px solid rgb(156, 156, 156);
+  border-radius: 4px; 
+  padding: 10px 15px; 
+  cursor: pointer;
+  margin-right: 20px; 
+
+}
+
+
+.button:hover,
+.button-edit-button:hover,
+.button-share-button:hover  {
+  background-color:#1b634d;
+  border: 2px solid #1b634d;
+  color: white;
+}
+
+
+ 
+
+tr.User1{
+  display: none;
+}
+
+tr.User2{
+  display: none;
+}
+
+tr.User4{
+  display: none;
+}
+
+ tr.show-row {
+  display: table-row;
+} 
+
+
+/* scrollbar track */
+::-webkit-scrollbar {
+  width: 5px; 
+}
+
+/* the draggable part */
+::-webkit-scrollbar-thumb {
+  background-color: #1b634d; 
+  border-radius: 6px; 
+}
+
+/*  scrollbar track on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #164637; 
+}
+
+
+::-webkit-scrollbar-thumb:active {
+  background-color: #339477; 
+}
+
+.search-container{
+  float: right;
+  
+
+}
+
+.search-input {
+  position: relative;
+  display: inline-block;
+  
+}
+
+/* search input */
+.search-input input[type="text"] {
+  padding: 5px 30px 5px 10px;
+  border: none;
+  border-bottom: 2px solid #1b634d;
+  background: transparent;
+  margin-right: 10px;
+ 
+}
+
+/* search submit button */
+.search-input button {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  width: 20px; 
+  height: 20px; 
+  background: url(/icons/magnifyings_icon.png) no-repeat center center;
+  background-size: contain;
+  cursor: pointer;
+  border: none; 
+  
+}
+
+
+
+
+/* ////////////////////////////////////////// */
+
+/* ////////////////////////MODALLLLLL///////////////////////// */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  
+  
+}
+
+.modal-content  {
+  background-color: #fefefe;
+  margin: 0% auto;
+  padding: 20px;
+  border: 3px solid #1f9448;
+  width: 500px;
+  height: 500px;
+  border-radius: 20px;
+  box-shadow: 0px 15px 40px rgb(0,0,0,0.12);
+
+}
+
+.modal h2 {
+  margin-top: 50px;
+
+}
+
+
+.modal h4 {
+  margin: 0;
+
+}
+
+
+.modal .modal-content{
+  text-align: center;
+
+}
+
+.modal-content h2,
+.modal-content h3 {
+  
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.modal-content h4 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+.modal-content p {
+  
+  font-size: 16px;
+}
+
+
+.modal-content .delete-warning {
+  text-align: left;
+    background-color: pink;
+    padding: 20px;
+    padding-left: 30px;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+/*cancel button */
+.modal-content .Cancel {
+  font-size: 16px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 25px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: 50px; 
+}
+
+.modal-content .Cancel:hover {
+  background-color: darkgreen;
+}
+
+/* delete file button */
+.modal-content .DeleteFile {
+  font-size: 16px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 25px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 50px;
+
+}
+
+.modal-content .DeleteFile:hover {
+  background-color: darkred;
+}
+
+.file-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.file-detail {
+  margin-bottom: 10px;
+}
+
+.file-detail label {
+  font-weight: bold;
+}
+
+.file-detail input {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #239456;
+  border-radius: 5px;
+}
+
+.file-detail-Description textarea {
+  width: 100%; 
+  height: 100px; 
+  padding: 5px;
+  border: 1px solid #239456;
+  border-radius: 5px;
+  resize: vertical;
+}
+
+.file-info {
+  width: 70%;
+  border-collapse: collapse;
+
+}
+
+.file-info th, .file-info td {
+  padding: 2px;
+  text-align: center;
+  font-size: 10px;
+}
+
+.file-info th {
+  
+  color: rgba(41, 41, 41, 0.904);
+  font-weight: bold;
+}
+
+
+/* //////////////////////////////////////////////////////////////// */
+
+.edit-modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  
+}
+
+/* //////////////////////////////////////////////////////////////// */
+
+.share-modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.share-modal .modal-content {
+  
+ 
+  width: 500px;
+  margin: 0 auto;
+  border: 3px solid #1f9448;
+  border-radius: 20px;
+  box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.share-modal h2 {
+  margin: 0px;
+  font-weight: bold;
+}
+
+.share-modal p {
+  margin-top: -2px;
+  font-size: 14px;
+}
+
+.projectlink {
+  margin: 0px;
+}
+
+.projectlink h4 {
+  margin: 0px;
+  font-weight: bold;
+  border: 1px;
+}
+
+.project-link-input {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-link-input input {
+  flex: 1;
+  padding: 5px;
+}
+
+.copy-button {
+  background-color: #1f9448;
+  color: white;
+  border: none;
+  padding: 7px 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.copy-button:hover {
+  background-color: #164637;
+}
+
+.projectlinkCredential h4 {
+  font-weight: bold;
+}
+
+
+/* //////////Credential //////////// */
+
+.credential-options {
+  display: flex;
+  margin: 0;
+  margin-top: 10px;
+  align-items: center;
+  position: relative; 
+}
+
+.credential-header {
+  display: flex;
+  align-items: center;
+}
+
+.credential-options h4 {
+  margin: 0;
+}
+
+.credential-dropdown {
+  background-color: #1f9448;
+  color: white;
+  margin-left: 5px;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.credential-dropdown:hover {
+  background-color: #164637;
+}
+
+.credential-dropdown-menu {
+  position: absolute;
+  width: 100px;
+  text-align: center;
+ display: none;
+  top: 100%; 
+  left: 200px;
+}
+
+.credential-options:hover .credential-dropdown-menu {
+  display: block;
+}
+
+.credential-dropdown-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #fefefe;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.credential-dropdown-menu ul li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.credential-dropdown-menu ul li:hover {
+  background-color: #f2f2f2;
+}
+
+
+/* ////////////INVITE////////////// */
+
+.inviteTeamMember {
+ margin-left: -10px;
+  font-weight: bold;
+}
+
+.inviteTeamMember h4 {
+  margin:10px;
+  font-weight: bold;
+}
+
+.invite-search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.invite-search input {
+  flex: 1;
+  padding: 5px;
+}
+
+.send-invite-button {
+  background-color: #1f9448;
+  color: white;
+  border: none;
+  padding: 7px 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.send-invite-button:hover {
+  background-color: #164637;
+}
+
+.TeamMember h4 {
+  margin: 0;
+  font-weight: bold;
+}
+
+.team-members-row {
+  margin-left: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+.team-member {
+
+  border: 1px solid #ccc;
+  margin: 10px;
+  display: flex;
+}
+
+.team-member img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.user-info {
+  flex: 1;
+}
+
+.user-info p {
+  margin: 0;
+  font-size: 11px;
+}
+
+.dropdown {
+  position: relative;
+  width: 100px;
+}
+
+.dropdown-button {
+  
+  font-size: 10px;
+  background-color: #1f9448;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 2px 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.dropdown-button:hover {
+  background-color: #164637;
+}
+
+.dropdown-menu {
+  position: absolute;
+  width: 55px;
+  background-color: #fefefe;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: none;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-menu ul li {
+  font-size: 14px;
+  padding: 2px;
+  cursor: pointer;
+}
+
+.dropdown-menu ul li:hover {
+  background-color: #f2f2f2;
+}
+
+.Discard-Changes {
+  font-size: 16px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 110px;
+ 
+}
+
+.Cancel:hover {
+  background-color: darkgreen;
+}
+
+.Save {
+  font-size: 16px;
+  background-color: red;
+  color: white;
+  border: none;
+  margin: 20px;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-weight: bold;
+
+}
+
+.Save:hover {
+  background-color: darkred;
+}
+
+#dragUploadArea {
+  margin-top: 10px;
+  width: 200px;
+  height: 40px;
+  border: 2px dashed #1ab380;
+  border-radius: 8px;
+  padding: 10px;
+  padding-left: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.drag-upload {
+  display: flex;
+  align-items: center; 
+}
+
+.drag-upload img {
+  width: 50px;
+  margin-right: 10px; 
+}
+
+.drag-upload p {
+  margin: 0;
+  font-size: 10px;
+}
+
+.drag-text {
+  font-size: 12px;
+  margin-top: -5px;
+}
+
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button-container {
+  margin-top: 10px;
+  text-align: center; 
+}
+
+.update-button {
+  background-color: #1f9448; 
+  color: white; 
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: 10px; 
+}
+
+.update-button:hover {
+  background-color: #164637; 
+}
+
+.cancel-button {
+  background-color: #ff0000; 
+  color: white; 
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.cancel-button:hover {
+  background-color: #cc0000; 
+}
+
+.button-container {
+  display: flex; /* Use flexbox to align buttons horizontally */
+  align-items: center; /* Vertically align items to the center */
+}
+
+/* Optionally, add spacing between buttons */
+.button-container button {
+  margin-right: 10px; /* Adjust the spacing as needed */
+ 
+}

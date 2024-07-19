@@ -1,0 +1,67 @@
+<?php
+// Establish a database connection (customize this part)
+$servername = "localhost";
+$username = "dbadmin";
+$password = "";
+$dbname = "mywebapp_db";
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+// Handle the uploaded file(s)
+if (isset($_FILES["image"])) {
+    $fileCount = count($_FILES["image"]["name"]);
+
+    for ($i = 0; $i < $fileCount; $i++) {
+        $fileName = $_FILES["image"]["name"][$i];
+        $fileTmpName = $_FILES["image"]["tmp_name"][$i];
+
+        // Specify your target upload directory
+        $targetDir = "uploads/";
+
+        // Generate a unique filename (you may use other logic)
+        $uniqueFileName = uniqid() . "_" . $fileName;
+        $targetFilePath = $targetDir . $uniqueFileName;
+
+        // Move the uploaded file to the target directory
+        if (move_uploaded_file($fileTmpName, $targetFilePath)) {
+            // Insert file information into the database (customize this query)
+            $sql = "INSERT INTO your_table (filename, filepath, uploaded_by) VALUES ('$uniqueFileName', '$targetFilePath', 'User')";
+            if ($conn->query($sql) === TRUE) {
+                // Retrieve the inserted data
+                $insertedData = "SELECT id, filename, DATE_FORMAT(updated, '%Y-%m-%d') AS date_uploaded, 
+                                 DATE_FORMAT(updated, '%Y-%m-%d') AS last_updated, uploaded_by 
+                                 FROM your_table WHERE id = " . $conn->insert_id;
+
+                $result = $conn->query($insertedData);
+                if ($result->num_rows > 0) {
+                    while ($row = $result->fetch_assoc()) {
+                        // Generate the table row dynamically
+                        echo '<tr class="show-row">';
+                        echo '<td class="select-checkbox"><input type="checkbox" class="fileCheckbox"></td>';
+                        echo '<td>' . $row["filename"] . '</td>';
+                        echo '<td>' . $row["date_uploaded"] . '</td>';
+                        echo '<td>' . $row["last_updated"] . '</td>';
+                        echo '<td>' . $row["uploaded_by"] . '</td>';
+                        echo '<td>';
+                        echo '<button class="delete-button button">Delete</button>';
+                        echo '<button class="edit-button button">Edit</button>';
+                        echo '<button class="share-button button">Share</button>';
+                        echo '</td>';
+                        echo '</tr>';
+                    }
+                }
+                echo "File uploaded successfully.";
+            } else {
+                echo "Error: " . $sql . "<br>" . $conn->error;
+            }
+        } else {
+            echo "Error uploading file.";
+        }
+    }
+}
+
+$conn->close();
+?>

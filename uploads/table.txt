@@ -1,0 +1,44 @@
+ <tr>
+                    <td class="select-checkbox">
+                      <input type="checkbox" id="fileCheckbox2">
+                    </td>
+                    <td>Image.jpg</td>
+                    <td>2023-09-02</td>
+                    <td>2023-09-06</td>
+                    <td>User2</td>
+                    <td>
+                      
+                      <button id="delete-button" class="button">Delete</button>
+                      <div id="myModal1" class="modal">
+                          <div class="modal-content">
+                              <!-- Modal content goes here -->
+                              <span class="close1">&times;</span>
+                          </div>
+                      </div>
+
+                      
+                    </td>
+                    <td>
+                      
+                      <button id="button-edit-button" class="button-edit-button">Edit</button>
+                      <div id="editModal1" class="modal">
+                          <div class="modal-content">
+                              <!-- Edit modal content goes here -->
+                              <span class="close-edit1">&times;</span>
+                              <!-- Additional content for Edit modal -->
+                              <h2>Edit Modal Content</h2>
+                          </div>
+                      </div>
+
+                    </td>
+                    <td>
+                      <button id="button-share-button" class="button-share-button">Share</button>
+                      <div id="shareModal1" class="modal">
+                          <div class="modal-content">
+                              <!-- Share modal content goes here -->
+                              <span class="close-share1">&times;</span>
+                              <!-- Additional content for Share modal -->
+                              <h2>Share Modal Content</h2>
+                          </div>
+                    </td>
+                  </tr>

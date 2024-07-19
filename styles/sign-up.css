@@ -1,0 +1,146 @@
+body, h1, h2, h3, p, form {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+
+
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  p {
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 4px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+ 
+  hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 20px;
+  }
+
+  input[type="checkbox"] {
+    margin-right: 5px;
+  }
+
+  a {
+    color: dodgerblue;
+  }
+
+  button {
+    background-color: dodgerblue;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 4px;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: orange;
+  }
+
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .background {
+    background-image: url("../images/Welcomepage.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+/* Style the inner container for the sign-up form */
+.inner-container {
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.image-container {
+  width: 1920px;
+  height: 950px;
+  background-image: url(../images/Welcomepage.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; 
+
+}
+
+
+button:hover {
+  background-color: darkblue;
+}
+
+.logo {
+  align-items: left;
+  position: absolute;
+  margin-left: 10px;
+  margin-top: 10px;
+  background-size: 20%;
+  height: 50px;
+}
+
+
+/* //////////////////////////// */
+
+.background {
+  background-image: url("../images/Welcomepage.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+/* Style the container for the welcome content */
+.container {
+  text-align: left;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 80px;
+  color: black;
+  background-color: rgb(255, 255, 255);
+  width: 350px;
+}
+
+/* Style the container for the sign-up form */
+.container-form {
+  background-color: rgb(255, 255, 255);
+  width: 350px;
+}
