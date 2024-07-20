@@ -9,7 +9,7 @@ $user_name = isset($_SESSION['user']['username']) ? $_SESSION['user']['username'
 
 <script>
 function goToWelcomePage() {
-  window.location.href = 'welcome-page.html';
+  window.location.href = 'index.html';
 }
 </script>
 
