@@ -85,7 +85,7 @@ if (isset($_POST['submit'])) {
                 <p>By creating an account you agree to our <a href="privacy-policy.html" style="color:dodgerblue">Terms & Privacy</a>.</p>
 
                 <div class="clearfix">
-                    <button type="button" class="cancelbtn" onclick="goToWelcomePage()">Cancel</button>
+                    <button type="button" class="cancelbtn" onclick="window.location.href='login.php';">Already have an account? Login Now</button>
                     <button type="submit" class="signupbtn" name="submit">Sign Up</button>
                 </div>
             </div>
