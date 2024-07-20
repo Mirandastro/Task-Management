@@ -33,7 +33,7 @@ if (isset($_POST['submit'])) {
 
                 
                 if ($result) {
-                    header("location: index.php?registered");
+                    header("location: login.php?registered");
                 } else {
                     $message = 'Error: Unable to register the user.';
                 }
