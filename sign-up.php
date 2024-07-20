@@ -33,7 +33,7 @@ if (isset($_POST['submit'])) {
 
                 
                 if ($result) {
-                    header("location: index.php?registered");
+                    header("location: login.php?registered");
                 } else {
                     $message = 'Error: Unable to register the user.';
                 }
@@ -56,8 +56,6 @@ if (isset($_POST['submit'])) {
 </head>
 
 <body>
-    <script src="scripts/signup.js"></script>
-
     <div class="image-container">
         <img src="icons/logo1.png" alt="Logo" class="logo">
         <form action="#" method="POST" id="signupForm" class="container-form">
@@ -87,7 +85,7 @@ if (isset($_POST['submit'])) {
                 <p>By creating an account you agree to our <a href="privacy-policy.html" style="color:dodgerblue">Terms & Privacy</a>.</p>
 
                 <div class="clearfix">
-                    <button type="button" class="cancelbtn" onclick="goToWelcomePage()">Cancel</button>
+                    <button type="button" class="cancelbtn" onclick="window.location.href='login.php';">Already have an account? Login Now</button>
                     <button type="submit" class="signupbtn" name="submit">Sign Up</button>
                 </div>
             </div>

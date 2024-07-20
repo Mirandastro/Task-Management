@@ -81,12 +81,11 @@ if (isset($_POST['submit'])) {
       </div>
 
       <div class="container1">
-        <button type="button" class="cancelbtn" onclick="goToSignUpPage()">Cancel</button>
+        <button type="button" class="cancelbtn" onclick="window.location.href='sign-up.php';">Don't have an account? Sign up for Now!</button>
         <span class="psw">Forgot <a href="#">password?</a></span>
       </div>
     </form>
   </div>
-  <script src="scripts/login.js"></script>
 </body>
 
 </html>

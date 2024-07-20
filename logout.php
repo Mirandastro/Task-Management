@@ -3,5 +3,5 @@
 session_start();
 if (isset($_SESSION['user'])) {
 	unset($_SESSION['user']);
-    header('Location: welcome-page.html');
+    header('Location: index.html');
 }

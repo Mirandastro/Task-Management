@@ -2,7 +2,7 @@
 session_start();
 
 if (!isset($_SESSION['user'])) {
-  header('Location: index.php');
+  header('Location: login.php');
 }
 
 if (isset($_POST["groupName"]) && isset($_POST["member"]) && isset($_POST["email"]) && isset($_POST["role"])) {

@@ -3,7 +3,7 @@
 session_start();
 
 if (!isset($_SESSION['user'])) {
-  header('Location: index.php');
+  header('Location: login.php');
 }
 
 $loged_in_user_id = isset($_SESSION['user']) ? $_SESSION['user']['id'] : 0;
