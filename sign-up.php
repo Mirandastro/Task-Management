@@ -56,8 +56,6 @@ if (isset($_POST['submit'])) {
 </head>
 
 <body>
-    <script src="scripts/signup.js"></script>
-
     <div class="image-container">
         <img src="icons/logo1.png" alt="Logo" class="logo">
         <form action="#" method="POST" id="signupForm" class="container-form">
